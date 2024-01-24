@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>addPaymentServlet</servlet-name>
+        <servlet-class>payment.addPaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addPaymentServlet</servlet-name>
+        <url-pattern>/addPaymentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>updatePayment</servlet-name>
+        <servlet-class>payment.updatePaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updatePayment</servlet-name>
+        <url-pattern>/updatePaymentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>deletePayment</servlet-name>
+        <servlet-class>payment.deletePaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deletePayment</servlet-name>
+        <url-pattern>/deletePayment</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>viewPayments</servlet-name>
+        <servlet-class>payment.ViewPaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>viewPayments</servlet-name>
+        <url-pattern>/viewPayments</url-pattern>
+    </servlet-mapping>
+</web-app>
